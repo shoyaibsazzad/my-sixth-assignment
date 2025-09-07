@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Earth - plant a Tree</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/about.png" type="image/x-icon">
     <!-- CSS link -->
     <link rel="stylesheet" href="styles/style.css" />
     <!-- tailwind & daisyUI CDN -->
@@ -15,6 +17,7 @@
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- navbar -->
+
      <nav class="bg-green-800 text-white p-4 flex justify-between items-center">
         <div class="font-bold text-xl">Green Earth</div>
         <ul class="hidden md:flex gap-6">
@@ -35,8 +38,58 @@
          hover:bg-yellow-300">Get Involved</button>
      </header>
 
-      <!-- Categories + Trees -->
+      <!-- Categories + Trees  + cart -->
 
-      <section class=""></section>
+      <section class="container mx-auto py-12 px-4 ">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 ">
+
+            <!-- Categories -->
+
+            <aside class="lg:col-span-1 md:col-span-1 ">
+                <h2 class="text-lg font-semibold mb-4">Categories</h2>
+                <div id="categories" class="flex flex-col gap-2"></div>
+            </aside>
+
+            <!-- tree cards -->
+
+            <div class="lg:col-span-4 md:col-span-2 ">
+                <h2 class="text-2xl font-bold mb-6 text-center">Choose Your Trees</h2>
+                <div id="trees" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+            </div>
+
+            <!-- cart -->
+
+            <aside class=" lg:col-span-1  md:col-span-1 ">
+                <h2 class="text-2xl font-bold mb-4">Your Cart</h2>
+                <ul id="cart" class="bg-white shadow p-4 rounded-2xl mb-4"></ul>
+                <p class="font-semibold ">Total: $ <span id="total">0</span></p>
+            </aside>
+        </div>
+      </section>
+
+      <!-- about campaign -->
+
+      <section class="py-12 px-90 md:flex items-center mx-auto container ">
+        
+       
+         <img src="./assets/about.png" alt="" class="h-100 w-100 rounded-lg mb-6 md:mb-0 mr-6">
+         <div>
+            <h2 class="text-2xl font-bold mb-4">About the Campaign</h2>
+            <p class="mb-4">
+                Green Earth is a global tree plantation initiative 
+                dedicated to fighting climate change. Since our start, we’ve planted 
+                over 500,000 trees worldwide. By joining our campaign, you help 
+                restore forests, create habitats for wildlife, and combat global
+                 warming.
+                </p>
+                <ul class="list-disc list-inside">
+                    <li>Improves air quality</li>
+                    <li>Restoration of natural habitats</li>
+                    <li>Support for local communities</li>
+                </ul>
+        </div>
+       </div>
+
+      
   </body>
 </html>
